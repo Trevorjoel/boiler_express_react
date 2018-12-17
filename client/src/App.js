@@ -36,10 +36,11 @@ class App extends Component {
             <h1 className="App-title">Welcome to React</h1>
         </header>
         // Render the newly fetched data inside of this.state.data
+                <p className="App-intro">{this.state.runMsg}</p>
             <p className="App-intro">Your first number is: {this.state.num1}</p>
                 <p className="App-intro">Your second number is: {this.state.num2}</p>
                 <p className="App-intro">Your total number is: {this.state.data}</p>
-                <p className="App-intro">{this.state.runMsg}</p>
+
 
             </div>
     );
