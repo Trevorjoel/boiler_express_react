@@ -13,7 +13,7 @@ class App extends Component {
     componentDidMount() {
         // Call our fetch function below once the component mounts
         this.callBackendAPI()
-            .then(res => this.setState({ data: res.num1 + res.num2, num1: res.num1, num2: res.num2, runMsg: res.runMsg}))
+            .then(res => this.setState({ data: res.num2 + res.num2, num1: res.num1, num2: res.num1, runMsg: res.runMsg}))
 
             .catch(err => console.log(err));
     }
